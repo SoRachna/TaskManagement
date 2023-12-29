@@ -84,8 +84,8 @@ Link for User file:https://shorturl.at/dEIK1
 	![picture](File io.jpg)
 	This authentication function is created to identify whether the login user is an admin or a regular user or not in the system. If not in the system then we apply **Exception method** to handle this problem.
 ##### Anonymous inner class or functional interface
-	![](Picture/Admin_Overload.jpg)
-	
+![](Picture/Anonymous.jpg)
+
 
 	
 
