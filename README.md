@@ -27,7 +27,7 @@
       In the Task Management folder, you will find the main file such as Program.java, and other necessary files of functions stored. 
       Whereas, inside the User folder, you will find all the functions that mainly focus on taking in and storing user information as txt.file. 
       Regarding the separation, however, all the classes remain related and all are part of the Program.java  file. 
-#### -->Folder Task management (https://github.com/SoRachna/Task-management/tree/d9f8bbe32b42e6e28c6d5ad0113dd8eff03d5ddd/TaskMangement)
+#### -->Folder Task management[](TaskManagement/TaskManagement)
 ##### 1. Classes
 ###### a. Program.java
       Java class that contains the main () method to compile and execute the program. In this main file, the program will ask for user 
