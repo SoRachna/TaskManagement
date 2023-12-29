@@ -65,24 +65,26 @@
 	Code line: userManager.displayAdminReportFromFile((Admin) user); 
         *User being cast to Admin
 ###### Overriding 
-	
+	![picture](Admin_Overriding.jpg)
 	The overriding method was used on both the Admin and the RegularUser class because we want to override the login function User and add on some special conditions such as secrete password in the admin class. 
 ###### Overloading
-
+	![picture](Admin_Overload.jpg)
 	We use Overload method both inside the Admin and RegularUser class as function displayUserInfo.() was called to use but they have different parameters. 
 ##### Encapsulation: (Private, Public, protected)
-	
+	![picture](Encapsulation.jpg)
 	We set username as protected because we only want to class that extends from the user can access it. 
  	We set password as private because we don't want to show it or anyone can access it without permission. 
 ##### Abstraction: (Abstract method, overriding abstract method)
-Link for User file:
+Link for User file:https://shorturl.at/dEIK1
+	The abstract method is used to make sure that classes that extend from the User class implement all the requirements that the User class has. 
 ##### Exception Handling
-	
+	![picture](Handeling Exception.jpg)
 	We use **Exception **to avoid system crashes when the user is not found.
 ##### File I/O
-	
+	![picture](File io.jpg)
 	This authentication function is created to identify whether the login user is an admin or a regular user or not in the system. If not in the system then we apply **Exception method** to handle this problem.
 ##### Anonymous inner class or functional interface
+	![picture](Anonymous.jpg)
 	
 
 	
