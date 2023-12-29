@@ -27,7 +27,7 @@
       In the Task Management folder, you will find the main file such as Program.java, and other necessary files of functions stored. 
       Whereas, inside the User folder, you will find all the functions that mainly focus on taking in and storing user information as txt.file. 
       Regarding the separation, however, all the classes remain related and all are part of the Program.java  file. 
-#### -->Folder Task management[](TaskManagement/TaskManagement)
+#### -->Folder Task management [](./TaskManagement/)
 ##### 1. Classes
 ###### a. Program.java
       Java class that contains the main () method to compile and execute the program. In this main file, the program will ask for user 
