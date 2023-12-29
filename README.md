@@ -62,10 +62,12 @@
 #### Essential part of the project
 ##### Polymorphism: Casting (Overriding and Overloading method)
 ###### casting
-	
+	Link to Admin.java: https://shorturl.at/inqCJ
 	Code line: userManager.displayAdminReportFromFile((Admin) user); 
-        *User beign cast to Admin
+        *User being cast to Admin
 ###### Overriding 
+	<img width="456" alt="Screenshot 2023-12-28 at 4 19 15 in the afternoon" src="https://github.com/SoRachna/TaskManagement/assets/151009957/c2f5b623-ac85-4d68-8d8c-05a97dfb5207">
+
 ###### Overloading
 ##### Encapsulation: (Private, Public, protected)
 	
