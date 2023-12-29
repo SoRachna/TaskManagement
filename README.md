@@ -49,7 +49,6 @@
 ##### 1. Classes
 ###### a. User (Superclass) 
 	An abstract superclass class that has two objects, username and password. The reason that set User as a superclass is that we expect to have multiple types of users using our program for example we have admin and regular user. As for the abstract class, since all the users need to log in before using our application therefore we use the abstract method to make sure all the subclasses that inherit from the superclass need to also implement login. 
-* link to User file: 
  ###### b.Admin (subclass)
  	A subclass inheritance from the Superclass User. Admin is the type of user that can perform more actions than regular users such as creating projects, adding tasks, assigning task owners, and viewing the task status that has been updated by the task owner or regular user.
  ###### c. RegularUser (Inheritance)
@@ -66,9 +65,11 @@
 	Code line: userManager.displayAdminReportFromFile((Admin) user); 
         *User being cast to Admin
 ###### Overriding 
-	<img width="456" alt="Screenshot 2023-12-28 at 4 19 15 in the afternoon" src="https://github.com/SoRachna/TaskManagement/assets/151009957/c2f5b623-ac85-4d68-8d8c-05a97dfb5207">
-
+	
+	The overriding method was used on both the Admin and the RegularUser class because we want to override the login function User and add on some special conditions such as secrete password in the admin class. 
 ###### Overloading
+
+	We use Overload method both inside the Admin and RegularUser class as function displayUserInfo.() was called to use but they have different parameters. 
 ##### Encapsulation: (Private, Public, protected)
 	
 	We set username as protected because we only want to class that extends from the user can access it. 
@@ -82,8 +83,7 @@ Link for User file:
 	
 	This authentication function is created to identify whether the login user is an admin or a regular user or not in the system. If not in the system then we apply **Exception method** to handle this problem.
 ##### Anonymous inner class or functional interface
-	![image](https://github.com/SoRachna/Task-management/assets/151009957/d8e37a90-ec94-4792-8c58-5db264f29314)
-
+	
 
 	
 
