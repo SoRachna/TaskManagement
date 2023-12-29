@@ -28,7 +28,7 @@
       Whereas, inside the User folder, you will find all the functions that mainly focus on taking in and storing user information as txt.file. 
       Regarding the separation, however, all the classes remain related and all are part of the Program.java  file. 
 #### -->Folder Task management
-	https://github.com/SoRachna/TaskManagement/tree/main/TaskManagement/TaskManagement
+	To access to files in "TaskManagement" directory navigate to: [TaskManagement](https://shorturl.at/aEJR9)
 ##### 1. Classes
 ###### a. Program.java
       Java class that contains the main () method to compile and execute the program. In this main file, the program will ask for user 
@@ -45,7 +45,7 @@
 	ii. .printAdminReport( ): A function inside the AdminFuncion class that takes the initiative to generate all the existing projects and tasks after the admin ends the implementation of creating or adding them.
 	iii. .handleUseActions( ): A function inside the RegularUserFunction class that gives the user access to implement view and update their task as well as its status. 
 #### --> Folder User
-	To access files in "Use" directory, navigate to: 
+	To access files in "Use" directory, navigate to: [User](https://shorturl.at/bsL17)
 ##### 1. Classes
 ###### a. User (Superclass) 
 	An abstract superclass class that has two objects, username and password. The reason that set User as a superclass is that we expect to have multiple types of users using our program for example we have admin and regular user. As for the abstract class, since all the users need to log in before using our application therefore we use the abstract method to make sure all the subclasses that inherit from the superclass need to also implement login. 
@@ -62,22 +62,22 @@
 #### Essential part of the project
 ##### Polymorphism: Casting (Overriding and Overloading method)
 ###### casting
-	![image](https://github.com/SoRachna/Task-management/assets/151009957/9da408d5-144e-4777-9cd9-b9224a723d40)
+	
 	Code line: userManager.displayAdminReportFromFile((Admin) user); 
         *User beign cast to Admin
 ###### Overriding 
 ###### Overloading
 ##### Encapsulation: (Private, Public, protected)
-	![image](https://github.com/SoRachna/Task-management/assets/151009957/f093c6c3-5307-4deb-8934-3dfde18e27ae)
+	
 	We set username as protected because we only want to class that extends from the user can access it. 
  	We set password as private because we don't want to show it or anyone can access it without permission. 
 ##### Abstraction: (Abstract method, overriding abstract method)
 Link for User file:
 ##### Exception Handling
-	![image](https://github.com/SoRachna/Task-management/assets/151009957/8897f1c0-e3d6-4d7e-b35f-f9f2a16a6966)
+	
 	We use **Exception **to avoid system crashes when the user is not found.
 ##### File I/O
-	![image](https://github.com/SoRachna/Task-management/assets/151009957/dc236a56-41d0-483d-a1a9-05faf796b163)
+	
 	This authentication function is created to identify whether the login user is an admin or a regular user or not in the system. If not in the system then we apply **Exception method** to handle this problem.
 ##### Anonymous inner class or functional interface
 	![image](https://github.com/SoRachna/Task-management/assets/151009957/d8e37a90-ec94-4792-8c58-5db264f29314)
