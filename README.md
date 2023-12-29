@@ -28,7 +28,7 @@
       Whereas, inside the User folder, you will find all the functions that mainly focus on taking in and storing user information as txt.file. 
       Regarding the separation, however, all the classes remain related and all are part of the Program.java  file. 
 #### -->Folder Task management
-	To access files in the "TaskManagement" directory, navigate to: [TaskManagement](./TaskManagement/)
+	To access files in the "TaskManagement" directory, navigate 		to:https://github.com/SoRachna/TaskManagement/tree/1652b1e02471e58f8cade9e7615a5166e8a10f1a/TaskManagement/TaskManagement
 ##### 1. Classes
 ###### a. Program.java
       Java class that contains the main () method to compile and execute the program. In this main file, the program will ask for user 
