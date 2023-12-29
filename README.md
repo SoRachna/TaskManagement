@@ -28,7 +28,7 @@
       Whereas, inside the User folder, you will find all the functions that mainly focus on taking in and storing user information as txt.file. 
       Regarding the separation, however, all the classes remain related and all are part of the Program.java  file. 
 #### -->Folder Task management
-	To access files in the "TaskManagement" directory, navigate to:[TaskManagement Folder](/TaskManagement)](https://shorturl.at/aEJR9)
+	To access files in the "TaskManagement" directory, navigate to:[TaskManagement Folder](/TaskManagement)(https://github.com/SoRachna/TaskManagement/tree/main/TaskManagement/TaskManagement))
 ##### 1. Classes
 ###### a. Program.java
       Java class that contains the main () method to compile and execute the program. In this main file, the program will ask for user 
@@ -45,6 +45,7 @@
 	ii. .printAdminReport( ): A function inside the AdminFuncion class that takes the initiative to generate all the existing projects and tasks after the admin ends the implementation of creating or adding them.
 	iii. .handleUseActions( ): A function inside the RegularUserFunction class that gives the user access to implement view and update their task as well as its status. 
 #### --> Folder User
+	To access files in "Use" directory, navigate to: 
 ##### 1. Classes
 ###### a. User (Superclass) 
 	An abstract superclass class that has two objects, username and password. The reason that set User as a superclass is that we expect to have multiple types of users using our program for example we have admin and regular user. As for the abstract class, since all the users need to log in before using our application therefore we use the abstract method to make sure all the subclasses that inherit from the superclass need to also implement login. 
