@@ -65,16 +65,12 @@
 	Code line: userManager.displayAdminReportFromFile((Admin) user); 
         *User being cast to Admin
 ###### Overriding 
-Admin
 ![](Picture/Admin_Overriding.jpg)
-Regularuser
 ![](Picture/RegularUser.Override.jpg)
 
 	The overriding method was used on both the Admin and the RegularUser class because we want to override the login function User and add on some special conditions such as secrete password in the admin class. 
 ###### Overloading
-Admin
 ![](Picture/Admin_Overload.jpg)
-Regularuser
 ![](Picture/RegularUser.overload.jpg)
 
 	We use Overload method both inside the Admin and RegularUser class as function displayUserInfo.() was called to use but they have different parameters. 
