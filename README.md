@@ -202,19 +202,18 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
     }
     ```
     
-    ## Polymorphism
+## Polymorphism
     
-    **Polymorphism** in Object-Oriented Programming (OOP) is a concept that refers to the ability of a single interface to represent different underlying forms (data types). In Java, polymorphism manifests in two primary forms: method overloading and method overriding.
+**Polymorphism** in Object-Oriented Programming (OOP) is a concept that refers to the ability of a single interface to represent different underlying forms (data types). In Java, polymorphism manifests in two primary forms: method overloading and method overriding.
     
-    **The idea behind the use of inheritance brings benefits such as:**
+**The idea behind the use of inheritance brings benefits such as:**   
+- **Flexibility**: Polymorphism allows methods to be written that can operate on objects of multiple types (as long as they share a common superclass or interface).
+- **Simplicity**: It simplifies code by allowing the same method to operate on different types of data.
+- **Extensibility**: New classes that are subclasses of a polymorphic superclass can be added to a program without modifying the program.
+- **Interchangeability**: Objects of different classes can be interchanged if they are polymorphic, reducing the coupling between classes.
     
-    - **Flexibility**: Polymorphism allows methods to be written that can operate on objects of multiple types (as long as they share a common superclass or interface).
-    - **Simplicity**: It simplifies code by allowing the same method to operate on different types of data.
-    - **Extensibility**: New classes that are subclasses of a polymorphic superclass can be added to a program without modifying the program.
-    - **Interchangeability**: Objects of different classes can be interchanged if they are polymorphic, reducing the coupling between classes.
-    
-    **Casting:**
-    
+**Casting:**
+
     ```java
     public class Admin extends User {
         private boolean isAdminVerified = false;
@@ -230,68 +229,67 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
         }
     }
     ```
+
+
+## Encapsulation
     
-    ## Encapsulation
+**Encapsulation** is access modifier  that involves bundling the data (variables) and methods that operate on the data into a single unit or class. It also involves restricting direct access to some of an object's components, which is typically achieved using access modifiers: public, private, protected, and default (package-private).
     
-    **Encapsulation** is access modifier  that involves bundling the data (variables) and methods that operate on the data into a single unit or class. It also involves restricting direct access to some of an object's components, which is typically achieved using access modifiers: public, private, protected, and default (package-private).
+**The idea behind the use of inheritance brings benefits such as:**
     
-    **The idea behind the use of inheritance brings benefits such as:**
+- **Control of Data**: Encapsulation allows you to control who can access and modify your data. This is crucial for maintaining the integrity of the data.
+- **Reducing Complexity**: By hiding the internal workings of objects, encapsulation makes software easier to use and understand.
+- **Flexibility and Maintainability**: Encapsulation allows changing the internal implementation of the class without affecting the classes that use it.
+- **Increased Security**: By limiting the access to the data and methods, encapsulation helps in preventing unauthorized or harmful modifications.
     
-    - **Control of Data**: Encapsulation allows you to control who can access and modify your data. This is crucial for maintaining the integrity of the data.
-    - **Reducing Complexity**: By hiding the internal workings of objects, encapsulation makes software easier to use and understand.
-    - **Flexibility and Maintainability**: Encapsulation allows changing the internal implementation of the class without affecting the classes that use it.
-    - **Increased Security**: By limiting the access to the data and methods, encapsulation helps in preventing unauthorized or harmful modifications.
+**There is a clear example of inheritance in the User package in the project:**
     
-    **There is a clear example of inheritance in the User package in the project:**
+1. **Public**
+   - **Usage**: Members (variables or methods) declared as public can be accessed from any other class.
+   - **Example**: **`public void login()`** in the **`User`** class.
+2. **Private**
+   - **Usage**: Private members can only be accessed within the class they are declared.
+   - **Example**:  **`User`** classes, like `**private String password;`.**
+3. **Protected**
+   - **Usage**: Protected members can be accessed within the same package and also in subclasses.
+   - **Example**:**`protected String username;`** in the **`User`** class.
     
-    1. **Public**
-        - **Usage**: Members (variables or methods) declared as public can be accessed from any other class.
-        - **Example**: **`public void login()`** in the **`User`** class.
-    2. **Private**
-        - **Usage**: Private members can only be accessed within the class they are declared.
-        - **Example**:  **`User`** classes, like `**private String password;`.**
-    3. **Protected**
-        - **Usage**: Protected members can be accessed within the same package and also in subclasses.
-        - **Example**:**`protected String username;`** in the **`User`** class.
+## Abstraction
     
-    ## Abstraction
+**Abstraction** in OOP is the concept of hiding the complex implementation details and showing only the necessary features of an object. It can be achieved through abstract classes and interfaces.
     
-    **Abstraction** in OOP is the concept of hiding the complex implementation details and showing only the necessary features of an object. It can be achieved through abstract classes and interfaces.
+- **Abstract Class**: An abstract class cannot be instantiated (you cannot create objects of an abstract class). It is used to provide a base for subclasses to extend and implement the abstract methods.
+- **Abstract Method**: An abstract method is a method that is declared without an implementation. Subclasses are required to provide an implementation for these methods.
+
+**There is a clear example of inheritance in the User package in the project:** 
+- **Reducing Complexity**: Abstraction allows you to focus on what the object does instead of how it does it.
+- **Reusability**: Abstract classes provide a template for other classes to use and extend.
+- **Design Flexibility**: It provides a way to plan for dynamic polymorphism in your design.
+- **Control**: Abstract classes can enforce a contract for subclasses, ensuring certain methods are implemented.
     
-    - **Abstract Class**: An abstract class cannot be instantiated (you cannot create objects of an abstract class). It is used to provide a base for subclasses to extend and implement the abstract methods.
-    - **Abstract Method**: An abstract method is a method that is declared without an implementation. Subclasses are required to provide an implementation for these methods.
+**In the project, there is a use abstraction in the `User` class:**
     
-    **There is a clear example of inheritance in the User package in the project:**
+1. **`User` as an Abstract Class**:
+   - The **`User`** class is likely declared as abstract, indicating it cannot be instantiated on its own and is meant to be a base class for other types of users.
     
-    - **Reducing Complexity**: Abstraction allows you to focus on what the object does instead of how it does it.
-    - **Reusability**: Abstract classes provide a template for other classes to use and extend.
-    - **Design Flexibility**: It provides a way to plan for dynamic polymorphism in your design.
-    - **Control**: Abstract classes can enforce a contract for subclasses, ensuring certain methods are implemented.
+	    ```java
+	    public abstract class User {
+	        // ... Fields and methods ...
+	    
+	        public abstract void login(); // Abstract method
+	    }
+	    ```
     
-    **In the project, there is a use abstraction in the `User` class:**
-    
-    1. **`User` as an Abstract Class**:
-        - The **`User`** class is likely declared as abstract, indicating it cannot be instantiated on its own and is meant to be a base class for other types of users.
-    
-    ```java
-    public abstract class User {
-        // ... Fields and methods ...
-    
-        public abstract void login(); // Abstract method
-    }
-    ```
-    
-    1. **Abstract Methods**:
-        - Within the **`User`** class, there is a  abstract methods (like **`login`**).
+2. **Abstract Methods**:
+   - Within the **`User`** class, there is a  abstract methods (like **`login`**).
             
             ```java
                 public abstract void login(UserManager userManager, Scanner scanner);
             ```
             
-        - Each subclass of **`User`** (like **`Admin`** and **`RegularUser`**) is required to provide its own implementation of these abstract methods.
-    2. **Subclasses Implementing Abstract Methods**:
-        - The **`Admin`** and **`RegularUser`** classes would extend the **`User`** class and provide concrete implementations o the abstract methods.
-        - Example:
+   - Each subclass of **`User`** (like **`Admin`** and **`RegularUser`**) is required to provide its own implementation of these abstract methods.
+3. **Subclasses Implementing Abstract Methods**:
+   - The **`Admin`** and **`RegularUser`** classes would extend the **`User`** class and provide concrete implementations o the abstract methods.
             
             ```java
             public class Admin extends User {
