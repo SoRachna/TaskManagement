@@ -220,9 +220,9 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
         private boolean isAdminVerified = false;
         private String reportData; 
     
-    		...
+    	...
     
-    		@Override
+    	@Override
         public boolean equals(Object obj) {
             if (!super.equals(obj)) return false;
             Admin admin = (Admin) obj;
