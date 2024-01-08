@@ -1,17 +1,13 @@
 # Project Name: Task Management 
-#### Member: Keo Munin & Kry Sorachna 
+## Member: Keo Munin & Kry Sorachna 
 
---
 
 ## Introduction
 
----
-
 The project focuses on task management, offering users an improved solution for managing tasks with effective functions. With more visibility of the teamwork environment, the system allows users to work and communicate confidentially within the association.
 
-## Feature
 
----
+## Feature
 
 1. **Authentication**
     
@@ -35,11 +31,10 @@ The project focuses on task management, offering users an improved solution for 
     - View assigned Project and Tasks
     - Update task status (Mark task done)
 
+
 ## Classes and Objects
 
----
-
-We a total of 10 classes. To maintain friendly access and organized code, this code structure was separated into two different packages, “`**TaskManagement**`” and “**`User`**”. 
+We a total of 10 classes. To maintain friendly access and organized code, this code structure was separated into two different packages, “**`TaskManagement`**” and “**`User`**”. 
 
 In the TaskManagement package, you will find “**`Program.java`**” where the program will run, and other necessary classes of functions stored. Whereas, inside the User folder, you will find all the classes needed for both user types (Admin and RegularUser) such as Login, Register, Authentication. 
 
@@ -64,8 +59,6 @@ Moreover, This Project is using simple data storing, where the action of user in
 7. **`Registered_regUser.txt`**: A text file likely used for storing data related to regular users. 
 
 ## Inheritance
-
----
 
 **Inheritance** is an “is-a” relationship between super class and sub classes. It allows a new class to extend an existing class. The new class inherits the members of the class it extends.
 
@@ -211,8 +204,6 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
     
     ## Polymorphism
     
-    ---
-    
     **Polymorphism** in Object-Oriented Programming (OOP) is a concept that refers to the ability of a single interface to represent different underlying forms (data types). In Java, polymorphism manifests in two primary forms: method overloading and method overriding.
     
     **The idea behind the use of inheritance brings benefits such as:**
@@ -242,8 +233,6 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
     
     ## Encapsulation
     
-    ---
-    
     **Encapsulation** is access modifier  that involves bundling the data (variables) and methods that operate on the data into a single unit or class. It also involves restricting direct access to some of an object's components, which is typically achieved using access modifiers: public, private, protected, and default (package-private).
     
     **The idea behind the use of inheritance brings benefits such as:**
@@ -266,8 +255,6 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
         - **Example**:**`protected String username;`** in the **`User`** class.
     
     ## Abstraction
-    
-    ---
     
     **Abstraction** in OOP is the concept of hiding the complex implementation details and showing only the necessary features of an object. It can be achieved through abstract classes and interfaces.
     
