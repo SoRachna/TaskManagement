@@ -85,7 +85,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
     - Also inherits from the **`User`** class.
     - Tailors the **`User`** class for regular users, potentially adding or overriding methods to fit the needs of a regular user, such as limited access compared to an admin.
     
-    ```java
+    ```ruby
     public abstract class User {
         protected String username;
         private String password;
@@ -309,8 +309,8 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
             }
             ```
 
-#### Exception Handling
-An exception is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling exception to handle error such as **File is not found** and **Reading file problem**. 
+## Exception Handling
+**Expection Handling** is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling exceptions in 6 different cases to handle errors such as **File is not found** and **Reading file problem**. 
 
 **File is not found**: If the **FileNotFoundException** occurs during the attempt to open the file, the catch block executes the code to handle this specific exception. By catching the **FileNotFoundException**, the code ensures that if the file isn’t found or there’s a problem accessing it, the program doesn't crash abruptly. 
 
@@ -365,16 +365,19 @@ public void displayAdminReportFromFile(Admin admin) {   // For Admin
     }
 ```
 
-#### File I/O
+## File I/O
+**File I/O** (Input/Output) refers to the interaction between a program and files on a storage device such as a hard drive, solid-state drive, or external storage media.
+Including file I/O in our program is essential as we need to store user data once they Login or Register. Again based on our case, we separated the user into two types, therefore, we have two files as below. In the admin file, we store 3 types of data: "**Username**", "**Password**", and "**secret_code**", which are separated by "\". On the other hand, for regularUser files, we store two types of data: "**Username**" and "**Password**". We use these data for future use such as Login case. 
 
-We have 2 file: 
+We have 2 files: 
 
 - **Registered_Admin.txt**: Use to store admin data
 
 - **Registered_regUser.txt**: Use to store User data
 
-#### Static method
-We use static method to access class without creating object. 
+## Static method
+**Static method**: It's a method that can be called on the class itself, without requiring the instantiation of an object of that class.
+We use static methods to access classes without creating an object. 
 
 ```ruby
 public static void handleAdminActions(Admin admin, UserManager userManager, Scanner scanner)
