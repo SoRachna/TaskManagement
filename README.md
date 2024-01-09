@@ -233,7 +233,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
 
 ## Encapsulation
     
-**Encapsulation** is access modifier  that involves bundling the data (variables) and methods that operate on the data into a single unit or class. It also involves restricting direct access to some of an object's components, which is typically achieved using access modifiers: public, private, protected, and default (package-private).
+**Encapsulation** is an access modifier  that involves bundling the data (variables) and methods that operate on the data into a single unit or class. It also involves restricting direct access to some of an object's components, which is typically achieved using access modifiers: public, private, protected, and default (package-private).
     
 **The idea behind the use of inheritance brings benefits such as:**
     
@@ -310,7 +310,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
             ```
 
 #### Exception Handling
-An exception is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling expection to handle error such as **File is not found** and **Reading file problem**. 
+An exception is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling exception to handle error such as **File is not found** and **Reading file problem**. 
 
 **File is not found**: If the **FileNotFoundException** occurs during the attempt to open the file, the catch block executes the code to handle this specific exception. By catching the **FileNotFoundException**, the code ensures that if the file isn’t found or there’s a problem accessing it, the program doesn't crash abruptly. 
 
