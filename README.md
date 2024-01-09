@@ -312,7 +312,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
 ## Exception Handling
 **Expection Handling** is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling exceptions in 6 different cases to handle errors such as **File is not found** and **Reading file problem**. 
 
-**File is not found**: If the **FileNotFoundException** occurs during the attempt to open the file, the catch block executes the code to handle this specific exception. By catching the **FileNotFoundException**, the code ensures that if the file isn’t found or there’s a problem accessing it, the program doesn't crash abruptly. 
+- **File is not found**: If the **FileNotFoundException** occurs during the attempt to open the file, the catch block executes the code to handle this specific exception. By catching the **FileNotFoundException**, the code ensures that if the file isn’t found or there’s a problem accessing it, the program doesn't crash abruptly. 
 
 ```ruby
  private User authenticateUser(String username, String password, String filePath) {
@@ -339,7 +339,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
         return null;
     }
 ```
-**Report/Task not found in admin flie**: The function is created to diplay report from the admin file. **IOException e** occurs when there're problem reading file. the catch block will execute the code that handling the error part.  
+- **Report/Task not found in admin flie**: The function is created to diplay report from the admin file. **IOException e** occurs when there're problem reading file. the catch block will execute the code that handling the error part.  
 ```ruby
 public void displayAdminReportFromFile(Admin admin) {   // For Admin
         Path path = Paths.get(ADMIN_FILE_PATH);
@@ -377,7 +377,8 @@ We have 2 files:
 
 ## Static method
 **Static method**: It's a method that can be called on the class itself, without requiring the instantiation of an object of that class.
-We use static methods to access classes without creating an object. 
+
+**Usage**: We use static methods to access classes without creating an object. 
 
 ```ruby
 public static void handleAdminActions(Admin admin, UserManager userManager, Scanner scanner)
