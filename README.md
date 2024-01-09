@@ -378,7 +378,7 @@ We have 2 files:
 ## Static method
 **Static method**: It's a method that can be called on the class itself, without requiring the instantiation of an object of that class.
 
-**Utility Functions in AdminFunctions.java and RegularUserFunctions.java**
+1. **Utility Functions in AdminFunctions.java and RegularUserFunctions.java**
 
 These classes contain static methods that perform operations related to admin and regular user functionalities, such as validating input data or performing calculations that don't depend on the state of an object.
 
@@ -391,9 +391,9 @@ public static boolean isValidDeadline(String deadline) {
 }
 ```
 
-**Main Method in Program.java**:
+2. **Main Method in Program.java**:
 
-The main method is the most common static method in Java applications. It serves as the entry point for your application.
+The main method serves as the entry point for your application.
  
 ```ruby
 public static void main(String[] args) {
