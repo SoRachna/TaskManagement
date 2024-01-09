@@ -214,7 +214,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
     
 **Casting:**
 
-    ```java
+```java
     public class Admin extends User {
         private boolean isAdminVerified = false;
         private String reportData; 
@@ -228,7 +228,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
             return isAdminVerified == admin.isAdminVerified;
         }
     }
-    ```
+```
 
 
 ## Encapsulation
@@ -283,34 +283,34 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
 2. **Abstract Methods**:
    - Within the **`User`** class, there is a  abstract methods (like **`login`**).
             
-            ```java
-                public abstract void login(UserManager userManager, Scanner scanner);
-            ```
+     ```java
+     	public abstract void login(UserManager userManager, Scanner scanner);
+     ```
             
    - Each subclass of **`User`** (like **`Admin`** and **`RegularUser`**) is required to provide its own implementation of these abstract methods.
 3. **Subclasses Implementing Abstract Methods**:
    - The **`Admin`** and **`RegularUser`** classes would extend the **`User`** class and provide concrete implementations o the abstract methods.
             
-            ```java
+     ```java
             public class Admin extends User {
                 @Override
                 public void login() {
                     // Implementation specific to Admin
                 }
             }
-            ```
+     ```
             
-            ```java
+     ```java
             public class RegularUser extends User {
                 @Override
                 public void login() {
                     // Implementation specific to RegularUser
                 }
             }
-            ```
+     ```
 
 ## Exception Handling
-**`Expection Handling`** is an object representing an error or an unexpected event that occurs during program execution. In this program we use **Exception Handling** in 6 different cases using the **`try-catch`** block to handle errors such as **File is not found** in **`userManager.java`** and **Reading file problem** in **`handleAdminFunctions.java`**. 
+**Expection Handling** is an object representing an error or an unexpected event that occurs during program execution. In this program we use handling exceptions in 6 different cases to handle errors such as **File is not found** and **Reading file problem**. 
 
 - **File is not found**: If the **FileNotFoundException** occurs during the attempt to open the file, the catch block executes the code to handle this specific exception. By catching the **FileNotFoundException**, the code ensures that if the file isn’t found or there’s a problem accessing it, the program doesn't crash abruptly. 
 
@@ -339,7 +339,7 @@ Hence, the inheritance  applied between “`User.java`”  “`Admin.java`” an
         return null;
     }
 ```
-- **Report/Task not found in admin flie**: The function is created to diplay report from the admin file. **IOException e** occurs when there's a problem reading a file. The catch block will execute the code that handles the error part.  
+- **Report/Task not found in admin flie**: The function is created to diplay report from the admin file. **IOException e** occurs when there're problem reading file. the catch block will execute the code that handling the error part.  
 ```ruby
 public void displayAdminReportFromFile(Admin admin) {   // For Admin
         Path path = Paths.get(ADMIN_FILE_PATH);
@@ -367,7 +367,7 @@ public void displayAdminReportFromFile(Admin admin) {   // For Admin
 
 ## File I/O
 **File I/O** (Input/Output) refers to the interaction between a program and files on a storage device such as a hard drive, solid-state drive, or external storage media.
-Including file I/O in our program is essential as we need to store user data once they Login or Register. Again based on our case, we separated the user into two types, therefore, we have two files as below. In the admin file, we store 3 types of data: **`Username`**, **`Password`**, and **`secret_code`**, which are separated by "\". On the other hand, for regularUser files, we store two types of data: **`Username`** and **`Password`**. We use these data for future use such as Login case. 
+Including file I/O in our program is essential as we need to store user data once they Login or Register. Again based on our case, we separated the user into two types, therefore, we have two files as below. In the admin file, we store 3 types of data: "**Username**", "**Password**", and "**secret_code**", which are separated by "\". On the other hand, for regularUser files, we store two types of data: "**Username**" and "**Password**". We use these data for future use such as Login case. 
 
 We have 2 files: 
 
@@ -378,30 +378,36 @@ We have 2 files:
 ## Static method
 **Static method**: It's a method that can be called on the class itself, without requiring the instantiation of an object of that class.
 
-1. **Utility Functions in AdminFunctions.java and RegularUserFunctions.java**
+1. **Utility Functions in AdminFunctions.java**
 
 These classes contain static methods that perform operations related to admin and regular user functionalities, such as validating input data or performing calculations that don't depend on the state of an object.
 
 #### Example:
-A static method to validate a task deadline format.
+A static method to **`handleAdminActionss`** in the **`AdminFunctions`** class.
  
 ```ruby
-public static boolean isValidDeadline(String deadline) {
-    // Validate deadline format
+public class AdminFunctions {
+    public static void handleAdminActions(Admin admin, UserManager userManager, Scanner scanner) {
+    ...
+    }
 }
 ```
 
-2. **Main Method in Program.java**:
-
-The main method serves as the entry point for your application.
-#### Example:
+2. **The method is called in **`Admin`** class without creating new object for the method.**:
  
 ```ruby
-public static void main(String[] args) {
-    // Start of the program
+public class Admin extends User {
+...
+@Override
+    public void login(UserManager userManager, Scanner scanner) {
+        ...
+            AdminFunctions.handleAdminActions(this, userManager, scanner);// Handle Admin actions  
+    }
+
 }
 ```
 
 
 	
+
 
